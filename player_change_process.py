@@ -26,7 +26,7 @@ class RClient(Client):
     def update(self, data):
         if self.mac_filter and data[0] == self.mac_filter:
 
-            print "*** %s" % data
+            # print "*** %s" % data
             player = self.hplayer
             if data[1] == "playlist":
                 if data[2] == "newsong":
